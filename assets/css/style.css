@@ -1103,6 +1103,8 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 0.9375rem auto;
+  min-height: 204px;
+  
 }
 
 .testimonials .owl-nav,
