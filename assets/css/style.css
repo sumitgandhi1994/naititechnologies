@@ -1876,6 +1876,10 @@ section#about {
   background: #80808014;
 }
 
+.ctm_menu #header.header-transparent {
+  background: rgba(42, 44, 57, 0.9);
+}
+
 /* //////Custom css end here///////// */
 /* //////Responsive css start here///////// */
 @media only screen and (max-width:767px) {
