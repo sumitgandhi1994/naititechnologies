@@ -93,8 +93,8 @@ a.whatsapp:hover {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 6.25rem;
-  transition: all 0.5s;
+  /* height: 6.25rem; */
+  height: 5rem;
   z-index: 997;
   transition: all 0.5s;
   background: rgba(42, 44, 57, 0.9);
@@ -106,7 +106,7 @@ a.whatsapp:hover {
 
 #header.header-scrolled {
   background: rgba(42, 44, 57, 0.9);
-  height: 4rem;
+  height: 5rem;
 }
 
 #header .logo h1 {
@@ -164,6 +164,7 @@ a.whatsapp:hover {
 .nav-menu li:hover>a {
   background: #ef6603;
   text-decoration: none;
+  color: white;
 }
 
 .nav-menu .drop-down ul {
@@ -272,9 +273,9 @@ a.whatsapp:hover {
 
 .mobile-nav {
   position: fixed;
-  top: 3.4375rem;
+  top: 4.4375rem;
   right: 0.9375rem;
-  bottom: 0.9375rem;
+  /* bottom: 0.9375rem; */
   left: 0.9375rem;
   z-index: 9999;
   overflow-y: auto;
@@ -2145,14 +2146,22 @@ footer hr {
   margin: 15px 0;
 }
 
+.ctm_menu {
+  background: rgba(42, 44, 57, 0.9) !important;
+}
+
 
 /* //////Responsive css start here///////// */
 @media only screen and (max-width:767px) {
   .carousel-item {
-    background-position: right top !important;
+    background: url("/assets/img/banner/mobile_circle.png") 30% 55% !important;
     position: relative;
     z-index: 99999;
   }
+
+  /* .carousel-fade .carousel-item.active{
+    opacity: 1;
+  } */
 
   #hero p {
     width: auto;
@@ -2161,7 +2170,7 @@ footer hr {
   .carousel-item::after {
     width: 100%;
     height: 100%;
-    background: #0000008f;
+    background: #00000029;
     content: " ";
     display: block;
     position: absolute;
@@ -2195,6 +2204,12 @@ footer hr {
   .portfolio #portfolio-flters li {
     font-size: 0.87rem;
   }
+
+  .mobile-nav-toggle {
+    top: 1.8rem;
+  }
+
+  
 }
 
 /* //////Responsive css end here///////// */

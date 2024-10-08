@@ -96,7 +96,7 @@
   var main_nav = $(".nav-menu, #mobile-nav");
 
   $(window).on("scroll", function () {
-    var cur_pos = $(this).scrollTop() + 80;
+    var cur_pos = $(this).scrollTop() + 60;
 
     nav_sections.each(function () {
       var top = $(this).offset().top,
@@ -119,14 +119,14 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 60) {
       $("#header").addClass("header-scrolled");
     } else {
       $("#header").removeClass("header-scrolled");
     }
   });
 
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 60) {
     $("#header").addClass("header-scrolled");
   }
 
@@ -219,7 +219,7 @@ function includeHTML() {
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
+    file = elmnt.getAttribute("nt-components");
     if (file) {
       /* Make an HTTP request using the attribute value as the file name: */
       xhttp = new XMLHttpRequest();
@@ -232,7 +232,7 @@ function includeHTML() {
             elmnt.innerHTML = "Page not found.";
           }
           /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
+          elmnt.removeAttribute("nt-components");
           includeHTML();
         }
       };
@@ -243,3 +243,11 @@ function includeHTML() {
     }
   }
 }
+
+// OWL Carousel
+$(document).ready(function () {
+  $("#heroCarousel").carousel({
+    pause: true,
+    interval: false,
+  });
+});

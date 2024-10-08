@@ -30,117 +30,44 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <script>
-    $(document).ready(function () {
-      $('#heroCarousel').carousel({
-        pause: true,
-        interval: false,
-      });
-    });
-  </script>
+  
 </head>
 
 <body>
+<!-- ======= Nav ======= -->
+<header
+  id="header"
+  class="fixed-top d-flex align-items-center header-transparent">
+  <div class="container d-flex align-items-center">
+    <div class="logo mr-auto">
+      <!-- <h1 class="text-light"><a href="index.html">Naiti Technologies</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="../index.html"
+        ><img
+          src="../assets/img/naitiTechnologies-Logo-w.png"
+          alt=""
+          class="img-fluid"
+      /></a>
+    </div>
 
-  <!-- <div w3-include-html="./components/header.html"></div> -->
-   <!-- =======Sub Header ======= -->
-
-<!-- ======= End Sub Header ======= -->
-<!-- ======= Top line ======= -->
-<div class="header-lines-decoration">
-  <span class="bg-secondary-color"></span>
-  <span class="bg-blue"></span>
-  <span class="bg-blue-light"></span>
-  <span class="bg-orange-light"></span>
-  <span class="bg-red"></span>
-  <span class="bg-green"></span>
-  <span class="bg-secondary-color"></span>
-</div>
-<!-- ======= End Top line ======= -->
-<!-- ======= Header ======= -->
-<div w3-include-html="../components/nav.html"></div>
-
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
-  <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel" data-interval="false">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-          <div class="carousel-container">
-              <h2 class="animated fadeInDown">We Deliver
-                  World-Class Digital Solutions
-                  On-Time In-Budget</h2>
-              <p class="animated fadeInUp">We deliver world-class digital solutions that are tailored to your unique
-                  business needs. With a focus on timely
-                  delivery and staying within budget, our team ensures top-quality results without compromising on
-                  excellence.
-              </p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Contact Now</a>
-          </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-          <div class="carousel-container">
-              <h2 class="animated fadeInDown">Web Design Company You Can Trust : Ethical, Reliable and Result Oriented
-              </h2>
-              <p class="animated fadeInUp">At our web design company, we prioritize ethical practices, reliability,
-                  and
-                  delivering results that drive success. With
-                  a focus on creating high-quality, user-friendly websites, we are committed to helping your business
-                  grow and
-                  thrive
-                  online with integrity and trust.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Contact Now</a>
-          </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-          <div class="carousel-container">
-              <h2 class="animated fadeInDown">Leading Web & Software Agency
-                  Top-Notch
-                  Services and Innovative IT Solutions</h2>
-              <p class="animated fadeInUp">As a leading web and software agency, we provide top-notch services and
-                  innovative IT solutions tailored to your
-                  business needs. Our expert team is dedicated to delivering cutting-edge technology that ensures your
-                  success
-                  in the
-                  digital landscape.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Contact Now</a>
-          </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
-
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- .nav-menu -->
   </div>
+</header>
+<!-- ======= End Nav ======= -->
 
-  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-  </svg>
-
-</section><!-- End Hero -->
-
+<!-- ======= Header ======= -->
+ <div nt-components="../components/header.html"></div>
+<!-- ======= Header End ======= -->
 
   <main id="main">
 
@@ -694,6 +621,34 @@
           <div class="testimonial-item">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              What I appreciated most was their collaborative approach. They worked closely with us to understand our
+              needs and
+              provided innovative design solutions that truly elevated our brand. The entire team was supportive, and we
+              felt involved
+              in every step. Great results!<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/Facebook_45882202.webp" class="testimonial-img" alt="">
+            <h3>Vikram N.</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              We were on a tight schedule for launching our new product, and this team delivered exactly what we needed
+              within the deadline. The website is visually appealing, user-friendly, and functional. Their dedication to
+              ensuring
+              customer satisfaction is evident in their work.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/Facebook_55972204.webp" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
               His skills & thinking on UI/UX is outstanding, I had been working with him for the past 1 year. He always had that genuine commitment towards work which I see less often. Looking forward to work again and again with him.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -723,35 +678,6 @@
             <h3>Amit M.</h3>
             <h4>IT Consultant</h4>
           </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              What I appreciated most was their collaborative approach. They worked closely with us to understand our
-              needs and
-              provided innovative design solutions that truly elevated our brand. The entire team was supportive, and we
-              felt involved
-              in every step. Great results!<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/Facebook_45882202.webp" class="testimonial-img" alt="">
-            <h3>Vikram N.</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              We were on a tight schedule for launching our new product, and this team delivered exactly what we needed
-              within the deadline. The website is visually appealing, user-friendly, and functional. Their dedication to
-              ensuring
-              customer satisfaction is evident in their work.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/Facebook_55972204.webp" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
         </div>
 
       </div>
@@ -1003,13 +929,13 @@
     <!-- End Team Section  -->
 
     <!-- ======= Contact Section ======= -->
-    <div id="contact" w3-include-html="./components/contact.html"></div>
+    <div id="contact" nt-components="./components/contact.html"></div>
     <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <div  class="footer-overflow" w3-include-html="./components/footer.html"></div>
+  <div  class="footer-overflow" nt-components="./components/footer.html"></div>
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
   <!-- Vendor JS Files -->

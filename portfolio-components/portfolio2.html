@@ -35,9 +35,40 @@
 </head>
 
 <body>
+ <!-- ======= Header ======= -->
+    <!-- <div nt-components="../components/nav_portfolio.html" class="ctm_menu"></div> -->
+    <!-- End Header -->
+    <!-- ======= Nav ======= -->
+    <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent ctm_menu"
+    >
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <!-- <h1 class="text-light"><a href="index.html">Naiti Technologies</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="../index.html"
+            ><img
+              src="../assets/img/naitiTechnologies-Logo-w.png"
+              alt=""
+              class="img-fluid"
+          /></a>
+        </div>
 
-    <div w3-include-html="../components/nav_portfolio.html" class="ctm_menu"></div>
-
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- ======= End Nav ======= -->
 
     <main id="main">
 
@@ -111,7 +142,7 @@
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <div class="footer-overflow" w3-include-html="../components/footer.html"></div>
+    <div class="footer-overflow" nt-components="../components/footer.html"></div>
     <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
 
