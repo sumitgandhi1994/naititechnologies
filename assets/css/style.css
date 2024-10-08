@@ -1104,7 +1104,7 @@ section {
   font-style: italic;
   margin: 0 auto 0.9375rem auto;
   min-height: 204px;
-  
+
 }
 
 .testimonials .owl-nav,
@@ -1583,7 +1583,7 @@ section {
 
 /*  Portfolio img*/
 .portfolio-img-container {
-  width: 50vw;
+  width: auto;
   height: 80vh;
   overflow: hidden;
   position: relative;
@@ -1601,11 +1601,11 @@ section {
   transition: transform 10s ease-in-out;
   display: block; */
   width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 10s ease;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 10s ease;
 
 }
 
@@ -1648,8 +1648,8 @@ section {
 
 
 .portfolio-details .portfolio-main {
-  display: flex;
-  gap: 4rem;
+  /* display: flex;
+  gap: 4rem; */
 
 }
 
@@ -1686,7 +1686,7 @@ section {
 }
 
 .portfolio-details .portfolio-description h2 {
-/* width: 50%; */
+  /* width: 50%; */
   padding-top: 2rem;
   font-size: 1.625rem;
   font-weight: 700;
@@ -1701,6 +1701,7 @@ section {
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 1.875rem;
+    padding: 1rem;
   }
 }
 
@@ -1881,36 +1882,7 @@ section#about {
 }
 
 /* //////Custom css end here///////// */
-/* //////Responsive css start here///////// */
-@media only screen and (max-width:767px) {
-  .carousel-item {
-    background-position: right top !important;
-    position: relative;
-    z-index: 99999;
-  }
 
-  #hero p {
-    width: auto;
-  }
-
-  .carousel-item::after {
-    width: 100%;
-    height: 100%;
-    background: #0000008f;
-    content: " ";
-    display: block;
-    position: absolute;
-    /* z-index: 0; */
-    top: 0;
-    left: 0;
-  }
-
-  #hero {
-    height: 93vh;
-  }
-}
-
-/* //////Responsive css end here///////// */
 
 
 
@@ -2172,3 +2144,57 @@ footer hr {
 .open-hours hr {
   margin: 15px 0;
 }
+
+
+/* //////Responsive css start here///////// */
+@media only screen and (max-width:767px) {
+  .carousel-item {
+    background-position: right top !important;
+    position: relative;
+    z-index: 99999;
+  }
+
+  #hero p {
+    width: auto;
+  }
+
+  .carousel-item::after {
+    width: 100%;
+    height: 100%;
+    background: #0000008f;
+    content: " ";
+    display: block;
+    position: absolute;
+    /* z-index: 0; */
+    top: 0;
+    left: 0;
+  }
+
+  #hero {
+    height: 99vh;
+  }
+
+  .footer-bottom {
+    display: inline-block;
+  }
+
+  .portfolio-details {
+    padding-top: 2rem;
+  }
+
+  .portfolio-details .portfolio-info ul {
+    font-size: 0.95rem;
+  }
+
+  .footer-title {
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio #portfolio-flters li {
+    font-size: 0.87rem;
+  }
+}
+
+/* //////Responsive css end here///////// */
