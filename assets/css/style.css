@@ -162,9 +162,13 @@ a.whatsapp:hover {
 .nav-menu a:hover,
 .nav-menu .active>a,
 .nav-menu li:hover>a,
-.nav-menu li:active>a {
+.nav-menu li:active>a{
   background: #ef6603;
   text-decoration: none;
+  color: white !important;
+}
+
+.nav-menu li a:focus {
   color: white !important;
 }
 
@@ -473,7 +477,7 @@ div#heroCarousel {
 
 @media (max-width: 768px) {
   #hero .carousel-container {
-    height: 100vh;
+    height: 94vh;
     width: 100%;
     position: relative;
     z-index: 9999;
@@ -2210,7 +2214,7 @@ footer hr {
     top: 1.8rem;
   }
 
-  
+
 }
 
 /* //////Responsive css end here///////// */
