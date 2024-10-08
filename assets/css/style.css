@@ -161,10 +161,11 @@ a.whatsapp:hover {
 
 .nav-menu a:hover,
 .nav-menu .active>a,
-.nav-menu li:hover>a {
+.nav-menu li:hover>a,
+.nav-menu li:active>a {
   background: #ef6603;
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 
 .nav-menu .drop-down ul {
